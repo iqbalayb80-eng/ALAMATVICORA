@@ -1,0 +1,1951 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VICORA — Find Us</title>
+
+<!-- GOOGLE FONT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+<style>
+
+/* =========================================================
+   VICORA LOCATION — ALL IN ONE
+========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    background:#fffef1;
+    color:#172018;
+}
+
+
+/* =========================================================
+   ROOT COLOR
+========================================================= */
+
+:root{
+
+    --yellow:#ffd92f;
+    --yellow-light:#fff2a1;
+    --yellow-dark:#e7b900;
+
+    --green:#183c24;
+    --green-light:#4d8b45;
+    --green-soft:#dcebd2;
+
+    --white:#ffffff;
+    --dark:#172018;
+
+}
+
+
+/* =========================================================
+   LOCATION SECTION
+========================================================= */
+
+.vicora-location{
+
+    position:relative;
+
+    min-height:100vh;
+
+    padding:120px 7%;
+
+    overflow:hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 8% 15%,
+            rgba(255,217,47,.30),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 92% 80%,
+            rgba(77,139,69,.18),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            #fffef1 0%,
+            #f5f9e9 100%
+        );
+
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.location-container{
+
+    position:relative;
+
+    z-index:5;
+
+    width:min(1250px,100%);
+
+    margin:auto;
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.location-heading{
+
+    max-width:760px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+
+}
+
+
+.location-mini-title{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:9px 18px;
+
+    border-radius:100px;
+
+    background:rgba(255,217,47,.25);
+
+    border:1px solid rgba(231,185,0,.25);
+
+    color:var(--green);
+
+    font-size:11px;
+
+    font-weight:900;
+
+    letter-spacing:2px;
+
+    margin-bottom:20px;
+
+}
+
+
+.location-heading h2{
+
+    font-size:clamp(45px,7vw,82px);
+
+    line-height:.92;
+
+    letter-spacing:-4px;
+
+    font-weight:900;
+
+}
+
+
+.location-heading h2 span{
+
+    display:block;
+
+    color:var(--yellow-dark);
+
+    text-shadow:
+        3px 4px 0 rgba(24,60,36,.07);
+
+}
+
+
+.location-heading p{
+
+    max-width:620px;
+
+    margin:25px auto 0;
+
+    color:#697268;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+}
+
+
+/* =========================================================
+   MAIN CARD
+========================================================= */
+
+.location-card{
+
+    display:grid;
+
+    grid-template-columns:.85fr 1.15fr;
+
+    min-height:600px;
+
+    overflow:hidden;
+
+    border-radius:34px;
+
+    background:rgba(255,255,255,.78);
+
+    border:1px solid rgba(255,255,255,.9);
+
+    box-shadow:
+        0 30px 80px rgba(41,71,43,.15);
+
+    backdrop-filter:blur(20px);
+
+    transition:
+        transform .25s ease,
+        box-shadow .5s ease;
+
+}
+
+
+/* =========================================================
+   INFORMATION
+========================================================= */
+
+.location-info{
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:55px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.95),
+            rgba(247,251,233,.95)
+        );
+
+}
+
+
+.location-icon{
+
+    width:65px;
+
+    height:65px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--yellow),
+            #ffec75
+        );
+
+    font-size:28px;
+
+    margin-bottom:25px;
+
+    box-shadow:
+        0 15px 30px rgba(232,185,0,.25);
+
+    animation:
+        iconFloat 4s ease-in-out infinite;
+
+}
+
+
+@keyframes iconFloat{
+
+    0%,100%{
+        transform:translateY(0) rotate(-3deg);
+    }
+
+    50%{
+        transform:translateY(-8px) rotate(3deg);
+    }
+
+}
+
+
+.location-label{
+
+    color:var(--green-light);
+
+    font-size:11px;
+
+    font-weight:900;
+
+    letter-spacing:2px;
+
+    margin-bottom:12px;
+
+}
+
+
+.location-info h3{
+
+    font-size:clamp(28px,3vw,42px);
+
+    line-height:1.05;
+
+    letter-spacing:-1.5px;
+
+    margin-bottom:18px;
+
+}
+
+
+.location-info h3 strong{
+
+    display:block;
+
+    color:var(--green-light);
+
+}
+
+
+.location-description{
+
+    max-width:450px;
+
+    color:#6c756d;
+
+    line-height:1.7;
+
+    margin-bottom:28px;
+
+}
+
+
+/* =========================================================
+   ADDRESS BOX
+========================================================= */
+
+.address-box{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:15px;
+
+    padding:17px;
+
+    margin-bottom:25px;
+
+    border-radius:20px;
+
+    background:rgba(220,235,210,.55);
+
+    border:1px solid rgba(77,139,69,.1);
+
+}
+
+
+.address-icon{
+
+    width:42px;
+
+    height:42px;
+
+    flex-shrink:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:13px;
+
+    background:#fff;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.06);
+
+}
+
+
+.address-box span{
+
+    display:block;
+
+    margin-bottom:5px;
+
+    color:var(--green-light);
+
+    font-size:10px;
+
+    font-weight:900;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+
+.address-box p{
+
+    color:#4c564d;
+
+    font-size:13px;
+
+    line-height:1.6;
+
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.location-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-bottom:25px;
+
+}
+
+
+.map-button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:9px;
+
+    padding:14px 20px;
+
+    border:none;
+
+    border-radius:100px;
+
+    cursor:pointer;
+
+    text-decoration:none;
+
+    font-family:inherit;
+
+    font-size:13px;
+
+    font-weight:800;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+
+}
+
+
+.map-button:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+.map-button.primary{
+
+    color:var(--dark);
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--yellow),
+            #ffe96b
+        );
+
+    box-shadow:
+        0 12px 25px rgba(232,185,0,.22);
+
+}
+
+
+.map-button.primary:hover{
+
+    box-shadow:
+        0 18px 35px rgba(232,185,0,.35);
+
+}
+
+
+.map-button.secondary{
+
+    color:var(--green);
+
+    background:#fff;
+
+    border:1px solid rgba(24,60,36,.1);
+
+}
+
+
+.map-button.secondary:hover{
+
+    background:var(--green);
+
+    color:#fff;
+
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.location-status{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#7b837b;
+
+    font-size:11px;
+
+    font-weight:600;
+
+}
+
+
+.status-dot{
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:#55b83e;
+
+    box-shadow:
+        0 0 0 5px rgba(85,184,62,.12);
+
+    animation:pulseDot 2s infinite;
+
+}
+
+
+@keyframes pulseDot{
+
+    0%,100%{
+        box-shadow:
+            0 0 0 5px rgba(85,184,62,.12);
+    }
+
+    50%{
+        box-shadow:
+            0 0 0 11px rgba(85,184,62,.02);
+    }
+
+}
+
+
+/* =========================================================
+   GOOGLE MAP
+========================================================= */
+
+.location-map{
+
+    position:relative;
+
+    min-height:600px;
+
+    overflow:hidden;
+
+    background:#dfe7d8;
+
+}
+
+
+.location-map iframe{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    border:0;
+
+    filter:
+        saturate(.85)
+        contrast(.95);
+
+    transition:
+        filter .5s ease;
+
+}
+
+
+.location-map:hover iframe{
+
+    filter:
+        saturate(1)
+        contrast(1);
+
+}
+
+
+/* =========================================================
+   MAP LABEL
+========================================================= */
+
+.map-overlay{
+
+    position:absolute;
+
+    top:25px;
+
+    left:25px;
+
+    z-index:10;
+
+    pointer-events:none;
+
+}
+
+
+.map-overlay-content{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:12px 17px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.88);
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.12);
+
+}
+
+
+.map-pin{
+
+    width:40px;
+
+    height:40px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:13px;
+
+    background:var(--yellow);
+
+    font-size:20px;
+
+}
+
+
+.map-overlay-content strong{
+
+    display:block;
+
+    color:#1a241b;
+
+    font-size:12px;
+
+}
+
+
+.map-overlay-content span{
+
+    display:block;
+
+    margin-top:3px;
+
+    color:#788078;
+
+    font-size:10px;
+
+}
+
+
+/* =========================================================
+   TAGS
+========================================================= */
+
+.location-tags{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:30px;
+
+}
+
+
+.location-tag{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:11px 17px;
+
+    border-radius:100px;
+
+    background:rgba(255,255,255,.75);
+
+    border:1px solid rgba(77,139,69,.12);
+
+    box-shadow:
+        0 8px 25px rgba(41,71,43,.06);
+
+    color:#596159;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    transition:
+        transform .3s ease;
+
+}
+
+
+.location-tag:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+/* =========================================================
+   BUBBLES
+========================================================= */
+
+.location-bubble{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    background:
+        radial-gradient(
+            circle at 30% 30%,
+            rgba(255,255,255,.85),
+            rgba(255,217,47,.12)
+        );
+
+    border:1px solid rgba(255,255,255,.7);
+
+    backdrop-filter:blur(2px);
+
+    animation:
+        bubbleFloat 8s ease-in-out infinite;
+
+}
+
+
+.bubble-1{
+
+    width:70px;
+    height:70px;
+
+    top:12%;
+    left:4%;
+
+}
+
+
+.bubble-2{
+
+    width:35px;
+    height:35px;
+
+    top:55%;
+    left:2%;
+
+    animation-delay:1s;
+
+}
+
+
+.bubble-3{
+
+    width:100px;
+    height:100px;
+
+    right:3%;
+    top:18%;
+
+    animation-delay:2s;
+
+}
+
+
+.bubble-4{
+
+    width:45px;
+    height:45px;
+
+    right:8%;
+    bottom:12%;
+
+    animation-delay:3s;
+
+}
+
+
+@keyframes bubbleFloat{
+
+    0%,100%{
+        transform:
+            translateY(0)
+            rotate(0deg);
+    }
+
+    50%{
+        transform:
+            translateY(-25px)
+            rotate(10deg);
+    }
+
+}
+
+
+/* =========================================================
+   BANANA DECORATION
+========================================================= */
+
+.banana-decoration{
+
+    position:absolute;
+
+    z-index:2;
+
+    font-size:90px;
+
+    opacity:.12;
+
+    pointer-events:none;
+
+    animation:
+        bananaFloat 6s ease-in-out infinite;
+
+}
+
+
+.banana-left{
+
+    left:-20px;
+
+    bottom:10%;
+
+}
+
+
+.banana-right{
+
+    right:-15px;
+
+    top:8%;
+
+    animation-delay:2s;
+
+}
+
+
+@keyframes bananaFloat{
+
+    0%,100%{
+        transform:
+            translateY(0)
+            rotate(-25deg);
+    }
+
+    50%{
+        transform:
+            translateY(-20px)
+            rotate(-15deg);
+    }
+
+}
+
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+.reveal{
+
+    opacity:0;
+
+    transform:
+        translateY(70px)
+        scale(.96);
+
+    transition:
+        opacity .8s ease,
+        transform .8s cubic-bezier(.16,1,.3,1);
+
+}
+
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:
+        translateY(0)
+        scale(1);
+
+}
+
+
+/* =========================================================
+   COPY NOTIFICATION
+========================================================= */
+
+.copy-notification{
+
+    position:fixed;
+
+    left:50%;
+
+    bottom:30px;
+
+    z-index:9999;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:13px 20px;
+
+    border-radius:100px;
+
+    background:var(--green);
+
+    color:#fff;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.2);
+
+    transform:
+        translate(-50%,100px);
+
+    opacity:0;
+
+    transition:
+        .45s cubic-bezier(.16,1,.3,1);
+
+}
+
+
+.copy-notification.show{
+
+    transform:
+        translate(-50%,0);
+
+    opacity:1;
+
+}
+
+
+.copy-notification span{
+
+    width:20px;
+
+    height:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:var(--yellow);
+
+    color:var(--dark);
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:950px){
+
+    .vicora-location{
+
+        padding:
+            90px 5%;
+
+    }
+
+
+    .location-card{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .location-map{
+
+        min-height:450px;
+
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    .vicora-location{
+
+        padding:
+            75px 20px;
+
+    }
+
+
+    .location-heading{
+
+        margin-bottom:40px;
+
+    }
+
+
+    .location-heading h2{
+
+        font-size:46px;
+
+        letter-spacing:-2px;
+
+    }
+
+
+    .location-heading p{
+
+        font-size:13px;
+
+    }
+
+
+    .location-card{
+
+        border-radius:25px;
+
+    }
+
+
+    .location-info{
+
+        padding:30px 25px;
+
+    }
+
+
+    .location-info h3{
+
+        font-size:29px;
+
+    }
+
+
+    .location-map{
+
+        min-height:360px;
+
+    }
+
+
+    .map-overlay{
+
+        top:15px;
+
+        left:15px;
+
+        right:15px;
+
+    }
+
+
+    .map-overlay-content{
+
+        padding:10px 13px;
+
+    }
+
+
+    .location-buttons{
+
+        flex-direction:column;
+
+    }
+
+
+    .map-button{
+
+        width:100%;
+
+    }
+
+
+    .location-tags{
+
+        flex-direction:column;
+
+    }
+
+
+    .location-tag{
+
+        justify-content:center;
+
+    }
+
+
+    .banana-decoration{
+
+        font-size:55px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     VICORA LOCATION SECTION
+========================================================= -->
+
+<section class="vicora-location" id="location">
+
+
+    <!-- DECORATIVE BUBBLES -->
+
+    <div class="location-bubble bubble-1"></div>
+
+    <div class="location-bubble bubble-2"></div>
+
+    <div class="location-bubble bubble-3"></div>
+
+    <div class="location-bubble bubble-4"></div>
+
+
+    <!-- BANANA -->
+
+    <div class="banana-decoration banana-left">
+        🍌
+    </div>
+
+    <div class="banana-decoration banana-right">
+        🍌
+    </div>
+
+
+    <div class="location-container">
+
+
+        <!-- =================================================
+             HEADING
+        ================================================== -->
+
+        <div class="location-heading reveal">
+
+            <span class="location-mini-title">
+                FIND US HERE
+            </span>
+
+
+            <h2>
+
+                KUNJUNGI
+
+                <span>VICORA</span>
+
+            </h2>
+
+
+            <p>
+
+                Temukan lokasi Fakultas Teknologi Pertanian
+                Universitas Jember dengan mudah.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             MAIN CARD
+        ================================================== -->
+
+        <div class="location-card reveal">
+
+
+            <!-- =================================================
+                 INFORMATION
+            ================================================== -->
+
+            <div class="location-info">
+
+
+                <div class="location-icon">
+
+                    📍
+
+                </div>
+
+
+                <span class="location-label">
+
+                    OUR LOCATION
+
+                </span>
+
+
+                <h3>
+
+                    Fakultas Teknologi Pertanian
+
+                    <strong>
+                        Universitas Jember
+                    </strong>
+
+                </h3>
+
+
+                <p class="location-description">
+
+                    Kampus Tegalboto, Universitas Jember,
+                    Jember, Jawa Timur.
+
+                </p>
+
+
+
+                <!-- ADDRESS -->
+
+                <div class="address-box">
+
+
+                    <div class="address-icon">
+
+                        📍
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            ALAMAT
+                        </span>
+
+
+                        <p id="vicoraAddress">
+
+                            Jl. Kalimantan No. 37,
+                            Kampus Tegalboto,
+                            Jember 68121,
+                            Jawa Timur, Indonesia
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- BUTTONS -->
+
+                <div class="location-buttons">
+
+
+                    <a
+                        href="https://www.google.com/maps/search/?api=1&query=Fakultas+Teknologi+Pertanian+Universitas+Jember"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="map-button primary"
+                    >
+
+                        <span>🗺️</span>
+
+                        Buka Google Maps
+
+                    </a>
+
+
+
+                    <button
+                        class="map-button secondary"
+                        id="copyAddress"
+                    >
+
+                        <span>📋</span>
+
+                        Salin Alamat
+
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- STATUS -->
+
+                <div class="location-status">
+
+                    <span class="status-dot"></span>
+
+                    Kampus Tegalboto · Universitas Jember
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 GOOGLE MAP
+            ================================================== -->
+
+            <div class="location-map">
+
+
+                <div class="map-overlay">
+
+
+                    <div class="map-overlay-content">
+
+
+                        <div class="map-pin">
+
+                            📍
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                Fakultas Teknologi Pertanian
+                            </strong>
+
+                            <span>
+                                Universitas Jember
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <iframe
+                    src="https://www.google.com/maps?q=Fakultas%20Teknologi%20Pertanian%20Universitas%20Jember&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             TAGS
+        ================================================== -->
+
+        <div class="location-tags reveal">
+
+
+            <div class="location-tag">
+
+                <span>🌱</span>
+
+                Agricultural Technology
+
+            </div>
+
+
+            <div class="location-tag">
+
+                <span>🎓</span>
+
+                Universitas Jember
+
+            </div>
+
+
+            <div class="location-tag">
+
+                <span>📍</span>
+
+                Kampus Tegalboto
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     COPY NOTIFICATION
+========================================================= -->
+
+<div
+    class="copy-notification"
+    id="copyNotification"
+>
+
+    <span>✓</span>
+
+    Alamat berhasil disalin!
+
+</div>
+
+
+
+<script>
+
+/* =========================================================
+   VICORA JAVASCRIPT
+========================================================= */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function(){
+
+
+        /* =====================================================
+           SCROLL REVEAL
+        ===================================================== */
+
+        const revealElements =
+            document.querySelectorAll(".reveal");
+
+
+        const revealObserver =
+            new IntersectionObserver(
+
+                function(entries){
+
+                    entries.forEach(
+
+                        function(entry){
+
+                            if(entry.isIntersecting){
+
+                                entry.target.classList.add(
+                                    "active"
+                                );
+
+                            }else{
+
+                                /*
+                                Hapus class ketika keluar
+                                viewport agar animasi muncul
+                                kembali ketika scroll ulang.
+                                */
+
+                                entry.target.classList.remove(
+                                    "active"
+                                );
+
+                            }
+
+                        }
+
+                    );
+
+                },
+
+                {
+                    threshold:.15
+                }
+
+            );
+
+
+        revealElements.forEach(
+
+            function(element){
+
+                revealObserver.observe(element);
+
+            }
+
+        );
+
+
+
+        /* =====================================================
+           COPY ADDRESS
+        ===================================================== */
+
+        const copyButton =
+            document.getElementById(
+                "copyAddress"
+            );
+
+
+        const address =
+            document.getElementById(
+                "vicoraAddress"
+            );
+
+
+        const notification =
+            document.getElementById(
+                "copyNotification"
+            );
+
+
+        if(copyButton && address){
+
+            copyButton.addEventListener(
+                "click",
+                async function(){
+
+                    try{
+
+                        await navigator.clipboard.writeText(
+                            address.innerText.trim()
+                        );
+
+
+                        notification.classList.add(
+                            "show"
+                        );
+
+
+                        setTimeout(
+                            function(){
+
+                                notification.classList.remove(
+                                    "show"
+                                );
+
+                            },
+                            2500
+                        );
+
+
+                    }catch(error){
+
+                        /*
+                        Fallback apabila clipboard
+                        browser tidak mengizinkan.
+                        */
+
+                        const textarea =
+                            document.createElement(
+                                "textarea"
+                            );
+
+
+                        textarea.value =
+                            address.innerText.trim();
+
+
+                        document.body.appendChild(
+                            textarea
+                        );
+
+
+                        textarea.select();
+
+
+                        document.execCommand(
+                            "copy"
+                        );
+
+
+                        textarea.remove();
+
+
+                        notification.classList.add(
+                            "show"
+                        );
+
+
+                        setTimeout(
+                            function(){
+
+                                notification.classList.remove(
+                                    "show"
+                                );
+
+                            },
+                            2500
+                        );
+
+                    }
+
+                }
+            );
+
+        }
+
+
+
+        /* =====================================================
+           PARALLAX BUBBLE
+        ===================================================== */
+
+        const bubbles =
+            document.querySelectorAll(
+                ".location-bubble"
+            );
+
+
+        window.addEventListener(
+            "scroll",
+            function(){
+
+                const scrollY =
+                    window.scrollY;
+
+
+                bubbles.forEach(
+                    function(
+                        bubble,
+                        index
+                    ){
+
+                        const movement =
+                            scrollY *
+                            (
+                                .015 +
+                                index * .005
+                            );
+
+
+                        bubble.style.transform =
+                            "translateY(" +
+                            movement +
+                            "px)";
+
+                    }
+                );
+
+            },
+            {
+                passive:true
+            }
+        );
+
+
+
+        /* =====================================================
+           DESKTOP 3D CARD TILT
+        ===================================================== */
+
+        const card =
+            document.querySelector(
+                ".location-card"
+            );
+
+
+        if(
+            card &&
+            window.innerWidth > 1000
+        ){
+
+            card.addEventListener(
+                "mousemove",
+                function(event){
+
+                    const rect =
+                        card.getBoundingClientRect();
+
+
+                    const x =
+                        event.clientX -
+                        rect.left;
+
+
+                    const y =
+                        event.clientY -
+                        rect.top;
+
+
+                    const centerX =
+                        rect.width / 2;
+
+
+                    const centerY =
+                        rect.height / 2;
+
+
+                    const rotateX =
+                        (y - centerY) / 100;
+
+
+                    const rotateY =
+                        (centerX - x) / 130;
+
+
+                    card.style.transform =
+                        "perspective(1200px)" +
+                        " rotateX(" +
+                        rotateX +
+                        "deg)" +
+                        " rotateY(" +
+                        rotateY +
+                        "deg)" +
+                        " translateY(-5px)";
+
+                }
+            );
+
+
+            card.addEventListener(
+                "mouseleave",
+                function(){
+
+                    card.style.transform =
+                        "";
+
+                }
+            );
+
+        }
+
+
+
+        /* =====================================================
+           BUTTON RIPPLE EFFECT
+        ===================================================== */
+
+        const buttons =
+            document.querySelectorAll(
+                ".map-button"
+            );
+
+
+        buttons.forEach(
+            function(button){
+
+                button.addEventListener(
+                    "click",
+                    function(event){
+
+                        const ripple =
+                            document.createElement(
+                                "span"
+                            );
+
+
+                        ripple.style.position =
+                            "absolute";
+
+
+                        ripple.style.width =
+                            "10px";
+
+
+                        ripple.style.height =
+                            "10px";
+
+
+                        ripple.style.borderRadius =
+                            "50%";
+
+
+                        ripple.style.background =
+                            "rgba(255,255,255,.7)";
+
+
+                        ripple.style.transform =
+                            "scale(0)";
+
+
+                        ripple.style.pointerEvents =
+                            "none";
+
+
+                        ripple.style.animation =
+                            "ripple .6s linear";
+
+
+                        const rect =
+                            button.getBoundingClientRect();
+
+
+                        ripple.style.left =
+                            (
+                                event.clientX -
+                                rect.left
+                            ) + "px";
+
+
+                        ripple.style.top =
+                            (
+                                event.clientY -
+                                rect.top
+                            ) + "px";
+
+
+                        button.style.position =
+                            "relative";
+
+
+                        button.style.overflow =
+                            "hidden";
+
+
+                        button.appendChild(
+                            ripple
+                        );
+
+
+                        setTimeout(
+                            function(){
+
+                                ripple.remove();
+
+                            },
+                            600
+                        );
+
+                    }
+                );
+
+            }
+        );
+
+
+    }
+);
+
+
+/* =========================================================
+   RIPPLE ANIMATION
+========================================================= */
+
+const rippleStyle =
+document.createElement("style");
+
+
+rippleStyle.innerHTML = `
+
+@keyframes ripple{
+
+    to{
+
+        transform:scale(40);
+
+        opacity:0;
+
+    }
+
+}
+
+`;
+
+
+document.head.appendChild(
+    rippleStyle
+);
+
+</script>
+
+
+</body>
+</html>
